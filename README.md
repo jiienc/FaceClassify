@@ -52,7 +52,7 @@ The model achieves the following performance metrics on the validation set:
 
 A confusion matrix is plotted to visualize the model's performance on different classes.
 
-![Confusion Matrix](confusion_matrix.png)
+![Confusion Matrix](__results___7_0.png)
 
 ## Model Export
 
