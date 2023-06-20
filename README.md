@@ -17,18 +17,6 @@ To access the dataset, follow these steps:
    - Training images: `./face-dataset/train`
    - Validation images: `./face-dataset/validation`
 
-Ensure that the directory structure looks like this:
-
-face-dataset
-├── train
-│ ├── Acne
-│ ├── Comedo
-│ └── Clear
-└── validation
-├── Acne
-├── Comedo
-└── Clear
-
 ## Model Architecture
 
 The model architecture used for image classification is based on MobileNetV2, a popular deep learning model for mobile and embedded vision applications. The pre-trained MobileNet model is used as the base model, and additional layers are added for classification.
@@ -60,13 +48,13 @@ The trained model can be exported and saved in TensorFlow Lite format for deploy
 
 1. After training the model, use the following code snippet to save it in TensorFlow SavedModel format:
 
-```python
-model.save("face_classification_model")
+   ```python
+   model.save("face_classification_model")
 
 2. Convert the SavedModel to TensorFlow Lite format using the TensorFlow Lite Converter:
 
-```python
-tensorflow_lite_converter --saved_model_dir=face_classification_model --output_file=face_classification_model.tflite
+   ```python
+   tensorflow_lite_converter --saved_model_dir=face_classification_model --output_file=face_classification_model.tflite
 
 The resulting .tflite file can be used for inference on mobile or embedded devices.
 
@@ -74,8 +62,8 @@ The resulting .tflite file can be used for inference on mobile or embedded devic
 
 1. To run the code locally or reproduce the results, follow these steps:
 
-```python
-git clone https://github.com/your-username/image-classification-face.git
+   ```python
+   git clone https://github.com/your-username/image-classification-face.git
 
 2. Install the required dependencies.
 
